@@ -11,7 +11,7 @@ pdf = None
 def openpdfFile():
     global pdfpath
     global pdfdir
-    pdffile = askopenfilename(title = "Open File", filetypes = (("Pdf File", "*.pdf"),("모든 파일", "*.*")))
+    pdffile = askopenfilename(title = "Open File", filetypes = (("Pdf File", "*.pdf"),("모든 파일", "*.*"))) #path
     pdfpath = os.path.dirname(pdffile) + "/"+ os.path.basename(pdffile)
     pdfdir = os.path.dirname(pdffile) + "/" + "result.pdf"
     lb1["text"]=pdfpath
